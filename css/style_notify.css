@@ -1,0 +1,63 @@
+QPushButton {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    height: 40px;
+    width: 200px;
+    color: #eee;
+    background: none;
+}
+
+QDateTimeEdit {
+    background-color: none;
+    color: #333333;
+    font-size: 2em;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 2px;
+
+}
+
+QLineEdit {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #1f1d1d;
+    background: none;
+}
+
+QDateTimeEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: right center;
+    width: 20px;
+    border-left-width: 1px;
+    border-left-color: #CCCCCC;
+    border-left-style: solid;
+    margin-right: 4px;
+}
+
+QPushButton:hover {
+    background: qlineargradient(spread:pad,
+    x1: 0,
+    y1: 0,
+    x2: 1,
+    y2: 0,
+    stop: 0 rgba(39, 65, 196, 1),
+    stop: 0.44 rgba(163, 81, 175, 1),
+    stop: 0.64 rgba(190, 43, 210, 1),
+    stop: 0.92 rgba(187, 63, 251, 1));
+}
+
+QPushButton:pressed {
+    background: qlineargradient(spread:pad,
+    x1: 0,
+    y1: 0,
+    x2: 1,
+    y2: 0,
+    stop: 0 rgba(23, 55, 158, 1),
+    stop: 0.44 rgba(106, 43, 109, 1),
+    stop: 0.64 rgba(133, 31, 135, 1),
+    stop: 0.92 rgba(130, 51, 163, 1));
+}
